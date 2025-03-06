@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #d5ebfe;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #333333;
+  font-size: 24px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555555;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form select {
+  background-color: #f9f9f9;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #00408a;
+  box-shadow: 0 0 5px rgba(0, 64, 138, 0.5);
+}
+
+p#error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form input[type="submit"] {
+  background-color: #00408a;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #5d9eff;
+}
+
+a#view-users {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #00408a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a#view-users:hover {
+  color: #0066cc;
+}
