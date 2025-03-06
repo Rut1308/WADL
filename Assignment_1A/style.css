@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#wrapper {
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar-header .logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+/* Page Content */
+#page-content {
+    margin-left: 270px;
+    width: 100%;
+    padding: 20px;
+}
+
+.dashboard-heading {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card Styling */
+.stat-card {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.stat-card .card-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    .sidebar-header h3 {
+        display: none;
+    }
+
+    .sidebar ul li {
+        font-size: 14px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .sidebar ul li i {
+        margin: 0;
+    }
+
+    #page-content {
+        margin-left: 100px;
+    }
+
+    .stat-card .card-text {
+        font-size: 18px;
+    }
+}
